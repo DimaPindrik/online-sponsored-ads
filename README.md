@@ -24,5 +24,5 @@ GET http://localhost:8080/serve-ad?category?SHOES
 H2 database has an embedded GUI console for browsing the contents of a database and running SQL queries.
 
 When application is running go to:
-To check DB go to: http://localhost:8080/h2-console/
+http://localhost:8080/h2-console/
 Jdbc url: jdbc:h2:mem:testdb
