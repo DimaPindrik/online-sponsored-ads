@@ -1,5 +1,6 @@
 package com.example.demo.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,7 +18,10 @@ public class Campaign {
     private int id;
 
     private String name;
+
+    @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate startDate;
+    
     private Category category;
 
     @OneToMany(cascade = CascadeType.ALL)
