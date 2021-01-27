@@ -18,5 +18,4 @@ public class CampaignDto {
     private Category category;
     private List<Product> products = new ArrayList<>();
     private double bid;
-
 }
