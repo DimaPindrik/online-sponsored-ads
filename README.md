@@ -25,4 +25,6 @@ H2 database has an embedded GUI console for browsing the contents of a database 
 
 When application is running go to:
 http://localhost:8080/h2-console/
+
 Jdbc url: jdbc:h2:mem:testdb
+username: sa
