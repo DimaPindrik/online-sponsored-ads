@@ -2,10 +2,7 @@ package com.example.demo.entities;
 
 import lombok.Data;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +11,10 @@ import java.util.List;
 @Entity
 @Table(name = "campaigns")
 public class Campaign {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     private String name;
     private LocalDate startDate;
