@@ -21,7 +21,7 @@ public class Campaign {
 
     @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate startDate;
-    
+
     private Category category;
 
     @OneToMany(cascade = CascadeType.ALL)

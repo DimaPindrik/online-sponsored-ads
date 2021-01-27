@@ -13,6 +13,7 @@ import java.util.List;
 @Setter
 public class CampaignDto {
 
+    private int id;
     private String name;
     private LocalDate startDate;
     private Category category;
