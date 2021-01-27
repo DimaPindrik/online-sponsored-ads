@@ -11,8 +11,9 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String serialNumber;
+    private int id;
 
+    private String serialNumber;
     private String title;
     private Category category;
     private double price;
